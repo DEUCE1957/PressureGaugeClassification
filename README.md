@@ -3,22 +3,25 @@ This reposistory provides a number of interactive tools for investigating Vacuum
  (LHC). These are provided in Jupyter Notebooks and - for convenience - should be hosted inside a [SWAN project](https://swan.web.cern.ch/). <br />
 ![Image of the Large Hadron Collider (LHC) at CERN](https://cds.cern.ch/images/CERN-PHOTO-201802-030-10/file?size=medium)
 
-## Tools
-* Analytical Vacuum Gauge Classifier <br /> 
-<pre> Automatically detects coupling in provided Vacuum Gauge(s). </pre>
-* Vacuum Gauge Explorer
-<pre> Interactive tool for stepping through and plotting Vacuum Gauges</pre>
-* Vacuum Gauge Main
-<pre> Quick tool for plotting many Vacuum Gauges using wildcards</pre> 
-* Single Gauge Analyzer 
-<pre> Plot and save detailed info on a single gauge</pre>
-* Vacuum Gauge Class Suite (WIP)
-<pre> Object-oriented approach to Vacuum Gauge analysis, ideal for filtering </pre>
-* Temperature Main
-<pre> Tool for plotting thermometer readings for a specific fill </pre>
-* Experimental Notebook
-<pre> Testing ground for expermental features, use with caution</pre> 
+## Warnings
+Tools are seperated into BackEnd and FrontEnd. To tweak behaviour across the board (e.g. Font-size on plots) modify the
+BackEnd Files. however, be careful when making generalized changes as it may cause unintentded side effects in other parts
+of the code. In general, it is recommended to stick to the FrontEnd files for normal usage.
 
+The data directory is generated in a very specific hierarchy for easy traversal in many of the notebooks, hence do NOT
+move or rename files in this directory unless you are well aware how the directory is being traversed.
+
+## Tools
+* Build Your Own Classifier <br /> 
+<pre> Build any classifier from the Sklearn library using interactive responses</pre>
+* XXXXXXXX_Classifier 
+<pre> Notebook with classifiers settings predefined, essentially a worked version of the build-your-own classifier</pre>
+* Vacuum Gauge Explorer
+<pre> Interactive tool for stepping through, classifying and plotting Vacuum Gauges</pre>
+* Raw Gauge Viewer
+<pre> Plot single or multiple gauges using gauge_ids and wildcards</pre> 
+* Data Collector
+<pre> A simple tool for building huge datasets for unsupervised learning </pre>
 
 ## Using the notebooks
 Running the .ipynb notebooks requires [Jupyter](https://jupyter.org/https://jupyter.org/) and [Python2](https://www.python.org/downloads/) to be installed. 
